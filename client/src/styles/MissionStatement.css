@@ -1,5 +1,10 @@
 .master-mission-statement{
-  width: 80%;
+  width: 75%;
   font-family: "Saira Semi Condensed", sans-serif;
   font-size: 1.5rem;
+
+  .title-mission{
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+  }
 }

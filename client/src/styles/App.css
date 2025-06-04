@@ -46,7 +46,7 @@ html,
 }
 
 .hero {
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,4 +70,60 @@ html,
   padding: clamp(6vh, 10vh, 15vh) 2rem;
   display: flex;
   justify-content: center;
+}
+
+.innovations-corporations-buttons-section {
+  padding: clamp(4vh, 8vh, 12vh) 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.innovations-corporations-title {
+  font-family: "Orbitron", sans-serif;
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.innovations-corporations-button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.innovator-button,
+.corporation-button {
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
+  color: white;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.innovator-button span,
+.corporation-button span {
+  transition: filter 0.3s ease;
+}
+
+.innovator-button:hover span,
+.corporation-button:hover span {
+  filter: drop-shadow(0 0 10px #ffffff);
+}
+
+/* Clicked (active) state */
+.innovator-button.clicked,
+.corporation-button.clicked {
+  border: 5px solid #ffcc00;
+  filter: drop-shadow(0 0 10px #ffcc00);
 }

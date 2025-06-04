@@ -2,9 +2,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 60px; 
-  width: 85%;
-  z-index: 1000; 
+  height: 60px;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,11 +12,11 @@
   background-color: inherit;
   color: white;
   font-family: "Orbitron", sans-serif;
-  backdrop-filter: blur(4px); 
+  backdrop-filter: blur(15px);
 }
 
-.nav-logo{
-  margin-left: 10%;
+.nav-logo {
+  margin-left: 5%;
   height: 50px;
   width: 55px;
   display: flex;
@@ -24,27 +24,71 @@
   justify-content: center;
 }
 
-.d2v-logo{
-  width:100%;
+.d2v-logo {
+  width: 100%;
   filter: drop-shadow(0 0 10px #ffffff);
 }
 
-.nav-links{
-  width: 20%;
+.nav-links {
+  width: 25%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  margin-right: 15%;
+}
 
-  a{
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    transition: 0.5s ease;
+.nav-buttons {
+  position: relative;
+  overflow: hidden;
+  width: 110px;
+  padding: 5%;
+  border-radius: 25px;
+  border: none;
+  background-color: inherit;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
 
-    &:hover {
-      color: #ffd600;
-      filter: drop-shadow(0 0 10px #ffffff);
-    }
-  }
+.nav-buttons::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  /* background-color: #000000; */
+  border-radius: 25px;
+  transition: left 0.2s ease;
+  z-index: 0;
+  filter: drop-shadow(0 0 10px #ffc227);
+}
+
+.nav-buttons::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 5px solid #ffc229;
+  border-radius: 25px;
+  transition: left 0.2s ease;
+  z-index: 1;
+}
+
+.nav-buttons:hover::before,
+.nav-buttons:hover::after {
+  left: 0;
+}
+
+.nav-buttons span {
+  position: relative;
+  z-index: 2;
 }
