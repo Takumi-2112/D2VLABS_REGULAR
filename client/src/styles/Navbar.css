@@ -1,0 +1,23 @@
+.master-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px; 
+  width: 97%;
+  z-index: 1000; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: inherit;
+  color: white;
+  backdrop-filter: blur(4px); 
+}
+
+.nav-links{
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
