@@ -1,14 +1,21 @@
+/* Global Reset + Background Setup */
 body,
 html,
 #root {
   width: 100dvw;
+  height: 100dvh;
   margin: 0;
   padding: 0;
-  background: linear-gradient(45deg, #000000 0%, #05005b 35%, #0090d8 100%);
+  background: linear-gradient(45deg, #000000 10%, #05005b 45%, #0090d8 80%);
   animation: gradient 12s ease infinite;
   background-size: 250% 200%;
+  background-attachment: fixed; /* optional: keeps background steady while scrolling */
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 
+/* Animated Gradient */
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -21,11 +28,46 @@ html,
   }
 }
 
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .master-app {
   display: flex;
   flex-direction: column;
+  background-color: inherit;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  background-color: inherit;
+}
+
+.title-image-container {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d2vlabs-title {
+  width: 100%;
+  filter: drop-shadow(0 0 2px #ffffff);
+  opacity: 0;
+  animation: fadeUp 1.2s ease-out 2s forwards;
+}
+
+.mission-section {
+  padding: clamp(6vh, 10vh, 15vh) 2rem;
+  display: flex;
+  justify-content: center;
 }

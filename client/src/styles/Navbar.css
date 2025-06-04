@@ -3,15 +3,30 @@
   top: 0;
   left: 0;
   height: 60px; 
-  width: 97%;
+  width: 85%;
   z-index: 1000; 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 2%;
   background-color: inherit;
   color: white;
+  font-family: "Orbitron", sans-serif;
   backdrop-filter: blur(4px); 
+}
+
+.nav-logo{
+  margin-left: 10%;
+  height: 50px;
+  width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d2v-logo{
+  width:100%;
+  filter: drop-shadow(0 0 10px #ffffff);
 }
 
 .nav-links{
@@ -20,4 +35,16 @@
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+
+  a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s ease;
+
+    &:hover {
+      color: #ffd600;
+      filter: drop-shadow(0 0 10px #ffffff);
+    }
+  }
 }
