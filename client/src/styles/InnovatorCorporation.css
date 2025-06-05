@@ -1,0 +1,20 @@
+.master-inn-corp {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Saira Semi Condensed", sans-serif;
+  margin: 0 auto;
+  min-height: 50vh; /* key to enable vertical centering */
+}
+
+.innovator-button-content,
+.corporation-button-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}

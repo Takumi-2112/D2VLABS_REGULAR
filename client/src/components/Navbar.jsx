@@ -1,7 +1,7 @@
 import "../styles/Navbar.css";
 import d2vLogo from "../assets/d2v-logo.png";
 
-function Navbar() {
+function Navbar({ handleLoginModalOpen }) {
   return (
     <nav className="master-navbar">
       <div className="nav-logo">
@@ -9,7 +9,7 @@ function Navbar() {
       </div>
       <div className="nav-links">
         <div className="link">
-          <button className="nav-buttons">
+          <button className="nav-buttons" onClick={handleLoginModalOpen}>
             <span>Login</span>
           </button>
         </div>

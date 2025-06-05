@@ -41,9 +41,8 @@
 .nav-buttons {
   position: relative;
   overflow: hidden;
-  width: 110px;
-  padding: 5%;
-  border-radius: 25px;
+  width: 100px;
+  padding: 1% 0 10% 0;
   border: none;
   background-color: inherit;
   color: white;
@@ -62,8 +61,6 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  /* background-color: #000000; */
-  border-radius: 25px;
   transition: left 0.2s ease;
   z-index: 0;
   filter: drop-shadow(0 0 10px #ffc227);
@@ -77,8 +74,7 @@
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  border: 5px solid #ffc229;
-  border-radius: 25px;
+  border-bottom: 5px solid #ffc229;
   transition: left 0.2s ease;
   z-index: 1;
 }
