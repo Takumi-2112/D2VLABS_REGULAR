@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../styles/Navbar.css";
-import d2vLogo from "../assets/d2v-logo.png";
+import d2vLogo from "../assets/D2V-LOGO.png";
 
 function Navbar({ handleLoginModalOpen, menuOpen, toggleMenu }) {
 
