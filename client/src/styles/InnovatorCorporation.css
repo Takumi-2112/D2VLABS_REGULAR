@@ -18,3 +18,11 @@
   align-items: center;
   font-size: 1.5rem;
 }
+
+/* MOBILE DEVICE */
+@media screen and (max-width: 768px) {
+  .innovator-button-content,
+  .corporation-button-content {
+    font-size: 0.8rem;
+  }
+}

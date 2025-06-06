@@ -127,3 +127,29 @@ html,
   border: 5px solid #ffcc00;
   filter: drop-shadow(0 0 10px #ffcc00);
 }
+
+
+/* MOBILE DEVICE */
+@media (max-width: 768px) {
+  .hero {
+    height: 100dvh;
+    margin:0;
+  }
+
+  .title-image-container {
+    width: 80%;
+  }
+
+  .d2vlabs-title {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .mission-section {
+  padding-bottom:10%;
+}
+
+  .innovations-corporations-title {
+  margin: 0;
+}
+}
