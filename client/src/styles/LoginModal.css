@@ -175,3 +175,35 @@ form {
     transform: scale(1);
   }
 }
+
+
+/* MOBILE DEVICE */
+@media screen and (max-width: 768px) {
+  .modal-content {
+    width: 80%;
+    padding: 5% 2%;
+    border-radius: 20px;
+    font-size: 0.8rem;
+  }
+
+  .modal-title {
+    font-size: 1.5rem;
+    margin-left: 5%;
+  }
+
+  .modal-inputs input {
+    width: 80%;
+    font-size: 1rem;
+    padding: 3% 2%;
+  }
+
+  .form-submit-button {
+    font-size: 1rem;
+    padding: 2%;
+  }
+
+  .close-modal {
+    font-size: 1.5rem;
+    margin-right: 3%;
+  }
+}
