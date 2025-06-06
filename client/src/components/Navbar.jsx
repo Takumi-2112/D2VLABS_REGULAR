@@ -1,13 +1,23 @@
+import { useState } from "react";
 import "../styles/Navbar.css";
 import d2vLogo from "../assets/d2v-logo.png";
 
-function Navbar({ handleLoginModalOpen }) {
+function Navbar({ handleLoginModalOpen, menuOpen, toggleMenu }) {
+
   return (
     <nav className="master-navbar">
       <div className="nav-logo">
-        <img className="d2v-logo" src={d2vLogo} alt="" />
+        <img className="d2v-logo" src={d2vLogo} alt="D2V Logo" />
       </div>
-      <div className="nav-links">
+
+      {/* Hamburger icon */}
+      <div className="hamburger" onClick={toggleMenu}>
+        <div className={`bar ${menuOpen ? "open" : ""}`}></div>
+        <div className={`bar ${menuOpen ? "open" : ""}`}></div>
+        <div className={`bar ${menuOpen ? "open" : ""}`}></div>
+      </div>
+
+      <div className={`nav-links ${menuOpen ? "show" : ""}`}>
         <div className="link">
           <button className="nav-buttons" onClick={handleLoginModalOpen}>
             <span>Login</span>

@@ -10,6 +10,9 @@ function App() {
   const [innovator, setInnovator] = useState(false);
   const [corporation, setCorporation] = useState(false);
   const [loginModalOpen, setLoginModalOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
   const handleInnovatorToggle = () => {
     setInnovator((prev) => !prev);
@@ -35,7 +38,11 @@ function App() {
 
   return (
     <div className="master-app">
-      <Navbar handleLoginModalOpen={handleLoginModalOpen}/>
+      <Navbar
+        handleLoginModalOpen={handleLoginModalOpen}
+        menuOpen={menuOpen}
+        toggleMenu={toggleMenu}
+      />
       {loginModalOpen && (
         <LoginModal
           loginModalOpen={loginModalOpen}
